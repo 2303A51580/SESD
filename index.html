@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Layered Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>University Learning Management System (LMS)</h1>
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Add Course</h2>
+            <input type="text" id="courseName" placeholder="Course Name">
+            <button onclick="addCourse()">Add Course</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Enroll Student</h2>
+            <input type="text" id="studentName" placeholder="Student Name">
+            <select id="courseSelect"></select>
+            <button onclick="enrollStudent()">Enroll Student</button>
+        </div>
+    </div>
+
+    <div class="display-section">
+        <h2>All Courses</h2>
+        <ul id="courseList"></ul>
+
+        <h2>Enrolled Students</h2>
+        <ul id="studentList"></ul>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
